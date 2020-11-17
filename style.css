@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height:100%;
+  margin:0;
+
+}
+
+.body{
+  margin:0;
+  position: absolute;
+  width: 100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+/* .container{
+  width: 100%;
+  height:100%;
+} */
+
+
+/* Specifies the size of the audio container */
+audio {
+  position: absolute;
+  margin:0;
+  left:0;
+  top:10px;
+  z-index: 99;
+  width: 120px;
+  height: 25px;
+  border:0;
+  /* background-color: white; */
+}
+
+audio::-webkit-media-controls-panel {
+  /* -webkit-justify-content: center; */
+  height: 25px;
+  background-color: white;
+  border:0;
+}
+
+/* Removes the timeline */
+audio::-webkit-media-controls-timeline {
+  display: none !important;
+}
+
+/* Removes the time stamp */
+audio::-webkit-media-controls-current-time-display {
+  display: none;
+}
+audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+
+/* Removes mute-button */
+audio::-webkit-media-controls-mute-button {
+  display: none;
+}
+
+/* Removes play-button */
+/* audio::-webkit-media-controls-play-button {
+  display: none;
+} */
+
+
+#circle {
+  height: 20rem;
+  width: 20rem;
+  border-style: solid;
+  border-radius: 50%;
+  margin:0;
+}
+#hour {
+  position: absolute;
+  top:50%;
+  width:50%;
+  height: 8px;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  background: linear-gradient(to right,  rgba(255,0,0,0) 0%, rgba(255,0,0,0) 40%,  black 40%,  black 100%);
+  /* background: rgb(19, 72, 233); */
+}
+#minute {
+  position: absolute;
+  top:50%;
+  width:50%;
+  height: 6px;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  background: linear-gradient(to right,  rgba(255,0,0,0) 0%, rgba(255,0,0,0) 10%,  black 10%,  black 100%);
+  /* background: rgb(20, 255, 0); */
+}
+#second {
+  position: absolute;
+  top:50%;
+  width:50%;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  background-color: rgb(255, 0, 0);
+  height:3px;
+}
+
+#clockface{
+  width: 40rem;
+  height: 40rem;
+  transform: translateY(0px);
+  /* background-color:rgb(48, 99, 235); */
+}
