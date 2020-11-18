@@ -30,7 +30,7 @@ body{
 audio {
   position: absolute;
   margin:0;
-  left:0;
+  left:10px;
   top:10px;
   z-index: 99;
   width: 120px;
